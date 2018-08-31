@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Ваш сайт</title>
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body class="body">
+  <main class="main-content">
+    <section class="orders">
+      <div class="orders__header">
+        <h2 class="orders__title">Order Book</h2>
+        <div class="orders__tools tools">
+          <div class="tools__button tools__button--info"></div>
+          <div class="tools__button tools__button--settings"></div>
+        </div>
+      </div>
+      <div class="table">
+        <div class="table__headers-container">
+          <div class="table__headers table__headers--left">
+            <div class="table__header table--left table__header--count">Count</div>
+            <div class="table__header table--left table__header--total">Total</div>
+            <div class="table__header table--left table__header--amount">Amount</div>
+            <div class="table__header table--right table__header--price">Price</div>
+          </div>
+          <div class="table__headers">
+            <div class="table__header table--left table__header--price">Price</div>
+            <div class="table__header table--right table__header--amount">Amount</div>
+            <div class="table__header table--right table__header--total">Total</div>
+            <div class="table__header table--right table__header--count">Count</div>
+          </div>
+        </div>
+        <div class="table__rows-container">
+          <div class="table__rows table__rows--asks">
+            <div class="table__row">
+              <div class="table__values table--left table__values--count"></div>
+              <div class="table__values table--left table__values--total"></div>
+              <div class="table__values table--left table__values--amount"></div>
+              <div class="table__values table--right table__values--price"></div>
+            </div>
+          </div>
+          <div class="table__rows table__rows--bids">
+            <div class="table__row">
+              <div class="table__values table--left table__values--price"></div>
+              <div class="table__values table--right table__values--amount"></div>
+              <div class="table__values table--right table__values--total"></div>
+              <div class="table__values table--right table__values--count"></div>
+            </div>
+          </div>
+      </div>
+    </div></section>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
