@@ -1,6 +1,6 @@
 'use strict';
 var xhr = new XMLHttpRequest();
-var URL = 'finSoft/js/data.json';
+var URL = 'js/data.json';
 
 function getConfig() {
   var container = document.querySelector('.table');
