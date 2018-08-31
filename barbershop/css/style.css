@@ -60,7 +60,7 @@
 
 body {
 	min-width: 1122px;
-	
+
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 24px;
@@ -68,7 +68,7 @@ body {
 	text-transform: uppercase;
 	color: #ffffff;
 	background: #f6f4f1 url(../img/content-bckg.png);
-	
+
 }
 
 .indexHtml input[type="text"]:hover {
@@ -181,7 +181,7 @@ body {
 	line-height: 20px;
 
 	vertical-align: top;
-	
+
 	padding-left: 20px;
 	padding-right: 20px;
 }
@@ -237,7 +237,7 @@ a.logo {
 	content: "";
 	width: 18px;
 	height: 16px;
-	background: transparent url("../img/.icon-login.png") no-repeat;
+	background: transparent url("../img/icon-login.png") no-repeat;
 	opacity: 0.3;
 	position: absolute;
 	top: 28px;
@@ -451,7 +451,7 @@ a.logo {
 }
 
 .footer::before {
-	
+
 }
 
 .footer {
@@ -826,7 +826,7 @@ h2 {
 	width: 230px;
 	padding-bottom: 15px;
 	padding-top: 10px;
-	
+
 }
 
 .price-info-block .service {
@@ -960,7 +960,7 @@ h2 {
 	padding: 16px;
 	padding-top: 0;
 	margin: 0;
-	margin-top: 16px;	
+	margin-top: 16px;
 }
 
 .result-item .btn {
@@ -1024,7 +1024,7 @@ h2 {
 
 .pagination li {
 	display: inline-block;
-	
+
 	background-color: #000000;
 	text-align: center;
 	font-size: 14px;
@@ -1182,7 +1182,7 @@ input[type="password"].login-form-password {
 
 .shown {
 	display: block;
-	
+
 }
 
 .login-popup-show {
