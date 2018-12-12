@@ -1,0 +1,39 @@
+.hero-header {
+  background-image: url(../img/hero.png);
+  background-color: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+  display: flex;
+
+  @media (min-width:@screen-xs) and (max-width: 996px) {
+    height: auto;
+    padding-top: 30px;
+  }
+  &__item {
+    width: 43%;
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    align-self: flex-end;
+    margin: 0 auto;
+
+    @media (min-width:@screen-xs) and (max-width: 996px) {
+    width: 90%;
+  }
+
+  }
+
+  &__text {
+    margin-bottom: 25px;
+  }
+
+  .btn {
+    margin-top: 50px;
+    @media (min-width:@screen-xs) and (max-width: 996px) {
+      width: 280px;
+  }
+  }
+}

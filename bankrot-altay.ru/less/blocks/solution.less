@@ -1,0 +1,61 @@
+.solution {
+  &__inner {
+    .container();
+  }
+
+  height: 850px;
+  box-sizing: border-box;
+  padding-top: 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/bg-solution.jpg);
+  text-align: center;
+
+    @media (min-width: @screen-xs) and (max-width: 996px) {
+      height: auto;
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+
+
+  &__title {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  &__desc {
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 35px;
+  }
+
+
+  .btn {
+    width: 378px;
+
+    @media (min-width: @screen-xs) and (max-width: 996px) {
+      width: 280px;
+    }
+  }
+
+  &__problems {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+    li {
+      font-weight: 400;
+      font-size: 20px;
+      display: inline-block;
+      padding: 0 10px;
+      line-height: 1;
+      +li {
+        border-left: 1px solid #000;
+        @media (min-width: @screen-xs) and (max-width: @screen-lg) {
+      border: none;
+    }
+      }
+    }
+  }
+}

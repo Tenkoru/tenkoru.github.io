@@ -1,0 +1,60 @@
+.main-popup {
+  width: 357px;
+  text-align: left;
+
+
+  @media (max-width: @screen-md) {
+    width: 300px;
+  }
+
+  .remodal-close {
+    left: auto;
+    right: 0;
+    color: #2951a1;
+  }
+
+
+  input{
+      border: 1px solid #d7d7d7;
+      width: 100%;
+      font-size: 15px;
+      font-weight: 300;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 3px;
+      box-sizing: border-box;
+      &:placeholder {
+        color: rgba(0,0,0,.5);
+      }
+    }
+
+
+
+  textarea  {
+    border: 1px solid #d7d7d7;
+    width: 100%;
+    height: 134px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  &__title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  &__descr {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+

@@ -1,0 +1,53 @@
+.table-container {
+  width: 100%;
+  overflow-y: auto;
+  _overflow: auto;
+  margin: 0 0 1em;
+}
+
+.table0  {
+
+  margin: 10px 0;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+
+  thead {
+    text-align: left;
+  }
+
+  td {
+    padding: 16px 25px;
+    &:first-child {
+      text-align: left;
+      width: 49%;
+    }
+  }
+
+
+}
+
+.table1 {
+  &:extend(.table0 all);
+  td {
+    border: 1px solid #000;
+  }
+}
+
+.table2 {
+  &:extend(.table0 all);
+  thead {
+    background-color: #def1e1;
+    border: 1px solid #f7f7f7;
+  }
+
+
+  tbody {
+    tr {border: 1px solid #d6d6d6;}
+  }
+
+
+}

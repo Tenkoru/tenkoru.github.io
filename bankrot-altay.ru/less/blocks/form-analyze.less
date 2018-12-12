@@ -1,0 +1,160 @@
+.form-analyze {
+ background-color: #2951a1;
+ padding: 75px 0;
+ color: #fff;
+ font-size: 15px;
+ text-align: center;
+
+ @media (min-width: @screen-xs) and (max-width: @screen-lg) {
+  padding: 30px 0;
+ }
+ &__inner {
+  .container();
+ }
+
+ &__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+ }
+
+ .btn {
+  border: 3px solid #fff;
+  padding: 17px 20px;
+  @media (min-width: @screen-xs) and (max-width: @screen-lg) {
+   width: 280px;
+ }
+ }
+
+ form {
+  margin-top: 50px;
+ }
+
+ &__top {
+  display: flex;
+  text-align: left;
+  flex-wrap: wrap;
+ }
+
+
+
+ input {
+  background-color: #2951a1;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #6a86bd;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    outline: none;
+    &:focus {
+      border: none;
+      box-shadow: none;
+      border-bottom: 1px solid #6a86bd;
+    }
+    &::placeholder {
+      color: #fff;
+    }
+ }
+
+ &__number {
+    width: 170px;
+    margin-right: 16px;
+    margin-left: 22px;
+
+ }
+
+
+ &__left {
+  width: 60%;
+  padding-top: 16px;
+
+  @media (min-width: @screen-xs) and (max-width: @screen-lg) {
+    width: 100%;
+  }
+ }
+
+ &__right {
+  width: 40%;
+  @media (min-width: @screen-xs) and (max-width: @screen-lg) {
+    width: 100%;
+  }
+ }
+
+ &__person {
+  margin-bottom: 30px;
+    >span {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    .jq-radio {
+      margin-right: 5px;
+    }
+
+    label {
+      cursor: pointer;
+      margin-right: 40px;
+
+      @media (min-width: @screen-xs) and (max-width: @screen-md) {
+        width: 100%;
+        margin-right: 0;
+        display: block;
+        margin: 5px 0;
+      }
+
+      @media (min-width: @screen-xs) and (max-width: @screen-lg) {
+        margin-right: 5px;
+      }
+    }
+ }
+
+ &__name {
+
+  @media (min-width: @screen-xs) and (max-width: @screen-lg) {
+    margin-bottom: 10px;
+  }
+    input {
+      margin-left: 10px;
+      width: 362px;
+      @media (min-width: @screen-xs) and (max-width: @screen-md) {
+     width: 210px;
+  }
+    }
+
+    span {
+      vertical-align: middle;
+    }
+ }
+
+ &__credit {
+  margin-bottom: 30px;
+ }
+
+ &__phone {
+  input {
+    width: 210px;
+  }
+  span {
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+ }
+
+ &__agree {
+  margin: 50px 0 55px 0;
+  label {
+    cursor: pointer;
+    vertical-align: middle;
+  }
+  .jq-checkbox {
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  a {
+    color: #fff;
+  }
+ }
+}

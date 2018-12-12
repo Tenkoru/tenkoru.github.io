@@ -1,0 +1,58 @@
+.guarantee {
+  background-color: #ffe64d;
+  background-image: url(../img/bg-guarantee.jpg);
+  background-size: cover;
+  padding-top: 65px;
+  padding-bottom: 75px;
+  @media (max-width: @screen-lg) {
+    background-image: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__inner {
+    .container();
+  }
+
+  &__title {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    @media (max-width: @screen-lg) {
+    margin-bottom: 20px;
+  }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+  }
+
+  &__text {
+    width: 50%;
+    font-size: 18px;
+    margin-right: 20px;
+    line-height: 1.4;
+
+    @media (min-width: @screen-xs) and (max-width: @screen-lg) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+
+    @media (min-width: 769px) and (max-width:996px) {
+      width: 44%;
+    }
+  }
+
+
+  .btn {
+    @media (min-width: @screen-xs) and (max-width: @screen-lg) {
+      margin: 0 auto;
+     }
+  }
+}
