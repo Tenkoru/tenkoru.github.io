@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Заголовок</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="http://{$smarty.server.HTTP_HOST}/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="http://{$smarty.server.HTTP_HOST}/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+
+<div class="mobile-header">
+  <div class="mobile-header__menu">
+    <div class="toggler"><span></span></div>
+    <ul class="mobile-header__nav">
+      <li><a href="">О компании</a></li>
+      <li><a href="">Новости</a></li>
+      <li><a href="">Сертификаты и лицензии</a></li>
+      <li><a href="services.html">Продукция</a></li>
+      <li><a href="projects.html">Проекты</a></li>
+      <li><a href="">Вопрос-ответ</a></li>
+      <li><a href="">Доставка</a></li>
+      <li><a href="">Контакты</a></li>
+    </ul>
+  </div>
+  <a class="mobile-header__logo" href="">
+    <img src="img/logo-min.svg" alt="" width="35" height="35">
+    <img src="img/logo-text.svg" alt="" width="100">
+  </a>
+  <div class="mobile-header__phone">
+    <div class="mobile-header__phone-icon">
+      <svg width="28" height="28">
+        <use xlink:href="#technology"></use>
+      </svg>
+    </div>
+    <div class="mobile-header__phone-toggled">
+      <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+      <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+      <a href="#popup-callback" class="btn-border">
+        <svg width="18" height="18">
+        <use xlink:href="#reload"></use>
+        </svg>
+        Обратный звонок
+      </a>
+    </div>
+  </div>
+  <div class="mobile-header__search">
+    <div class="mobile-header__search-icon">
+      <svg width="28" height="28">
+        <use xlink:href="#loupe"></use>
+      </svg>
+    </div>
+    <div class="mobile-header__search-toggled">
+      <div class="search">
+      <form>
+        <input type="search" placeholder="Поиск по сайту">
+         <div class="search__submit-wrapper">
+           <input type="submit" value="">
+         </div>
+      </form>
+  </div>
+    </div>
+  </div>
+
+  </div>
+
+</div>
+
+<header class="page-header">
+  <nav class="nav">
+    <ul class="nav__list">
+      <li><a href="">О компании</a></li>
+      <li><a href="">Новости</a></li>
+      <li><a href="">Сертификаты и лицензии</a></li>
+    </ul>
+  </nav>
+  <div class="search">
+      <form>
+        <input type="search" placeholder="Поиск по сайту">
+         <div class="search__submit-wrapper">
+           <input type="submit" value="">
+         </div>
+      </form>
+  </div>
+</header>
+
+
+
+  <div class="hero-header">
+    <div class="hero-header__inner">
+      <div class="hero-header__contacts">
+        <div class="hero-header__contacts-left">
+          <a href="calc.html" class="btn-border">
+            <svg width="18" height="18">
+              <use xlink:href="#calc"></use>
+            </svg>
+            Рассчитать заказ
+          </a>
+          <div class="hero-header__time">
+            Ежедневно <br>
+            <span>10:00-22:00</span>
+          </div>
+        </div>
+        <a class="logo" href="index.html">
+          <img src="img/logo.png" alt="">
+        </a>
+        <div class="hero-header__contacts-right">
+           <div class="hero-header__mobile">
+             <a href="tel:+74951234567">+7 <span class="orange">(495)</span> 123-45-67</a>
+             <a href="tel:+74951234567">+7 <span class="orange">(495)</span> 123-45-67</a>
+           </div>
+           <a href="#popup-callback" class="btn-border">
+            <svg width="18" height="18">
+              <use xlink:href="#reload"></use>
+            </svg>
+            Обратный звонок
+          </a>
+
+        </div>
+      </div>
+      <ul class="hero-header__nav">
+        <li><a href="services.html">Продукция</a></li>
+        <li><a href="projects.html">Проекты</a></li>
+        <li><a href="">Вопрос-ответ</a></li>
+        <li><a href="">Доставка</a></li>
+        <li><a href="">Контакты</a></li>
+      </ul>
+      <div class="hero-header__slogan">
+        <div class="hero-header__title">
+          Производство и монтаж <br>
+          металлоконструкций
+        </div>
+        <div class="hero-header__text">
+          из нержавеющей стали, стекла (офисные перегородки) <br>
+          и чёрного металла (холодная ковка)
+        </div>
+        <a href="services.html" class="btn">Узнать подробнее</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="categories">
+    <div class="categories__inner">
+      <a href="services.html" class="categories__item">
+        <div class="categories__name">
+          Ограждения из нержавейки
+        </div>
+        <img class="categories__img" src="img/cat3.png" alt="">
+      </a>
+      <a href="services.html" class="categories__item">
+        <div class="categories__name">
+          Офисные перегородки
+        </div>
+        <img class="categories__img" src="img/cat2.png" alt="">
+      </a>
+      <a href="services.html" class="categories__item">
+        <div class="categories__name">
+          Ограждения из стекла
+        </div>
+        <img class="categories__img" src="img/cat3.png" alt="">
+      </a>
+      <a href="services.html" class="categories__item">
+        <div class="categories__name">
+          Козырьки lorem ipsum
+        </div>
+        <img class="categories__img" src="img/cat4.png" alt="">
+      </a>
+      <a href="services.html" class="categories__item">
+        <div class="categories__name">
+          Навесы lorem ipsum
+        </div>
+        <img class="categories__img" src="img/cat3.png" alt="">
+      </a>
+
+    </div>
+  </div>
+
+  <div class="advantages">
+    <a href="" class="link-arrow"></a>
+    <div class="advantages__inner">
+      <div class="advantages__title">
+        <img src="img/logo-text.svg" alt="">
+        это
+        <svg>
+          <use xlink:href="#bracket"></use>
+        </svg>
+      </div>
+
+      <div class="advantages__items">
+        <div class="advantages__item">
+          <img src="img/advantage1.png" alt="">
+          <div class="advantages__item-title">10 лет опыта</div>
+          <div class="advantages__item-text">Специалисты нашей компании обладают более чем 10-летним опытом в возведении металлоконструкций </div>
+        </div>
+        <div class="advantages__item">
+          <img src="img/advantage2.png" alt="">
+          <div class="advantages__item-title">Гарантия 3 года</div>
+          <div class="advantages__item-text">Мы обеспечиваем надёжное
+          и качественное гарантийное обслуживание
+          всех произведённых конструкций </div>
+        </div>
+        <div class="advantages__item">
+          <img src="img/advantage3.png" alt="">
+          <div class="advantages__item-title">Экономия</div>
+          <div class="advantages__item-text">Гибкое ценообразование и система
+          бонусов, которые порадуют любого заказчика
+          выгодными предложениями</div>
+        </div>
+        <div class="advantages__item">
+          <img src="img/advantage4.png" alt="">
+          <div class="advantages__item-title">Оборудование</div>
+          <div class="advantages__item-text">Мы используем современное
+          оборудование для нашего собственного
+          производства и при выполнении работ</div>
+        </div>
+        <div class="advantages__item">
+          <img src="img/advantage5.png" alt="">
+          <div class="advantages__item-title">Пунктуальность</div>
+          <div class="advantages__item-text">Нашим клиентам гарантировано
+          соблюдение сроков и условий договора
+          строго в указанный период</div>
+        </div>
+        <div class="advantages__item">
+          <img src="img/advantage6.png" alt="">
+          <div class="advantages__item-title">Качество</div>
+          <div class="advantages__item-text">Мы применяем недорогие, но
+          тщательно проверенные качественные
+          материалы и технологии</div>
+        </div>
+      </div>
+      <a href="" class="btn">Консультация специалиста</a>
+    </div>
+  </div>
+
+
+      <div class="slider">
+        <a href="" class="link-arrow"></a>
+        <div class="slider__header">
+          <div class="slider__title">Примеры наших работ</div>
+          <div class="slider__text">
+            Высокое качество работ достигается благодаря квалифицированным специалистам, применению самого современного оборудования, тщательному подбору используемых материалов и расчётных методик.
+          </div>
+        </div>
+        <div class="slider__inner  owl-carousel">
+          <div class="projects__item" style="background-image: url(img/project1.png)">
+            <div class="projects__left">
+              <a href="" class="btn-border"> Хочу также!</a>
+            </div>
+            <div class="projects__right">
+              <div class="projects__title">Комбинированные ограждения со стеклом</div>
+              <div class="projects__price">12 500 000 <span>₽</span> </div>
+              <div class="projects__text">
+                Поручень делается из дуба круглого или прямоугольного сечения. Стекло крепится между стойками на зажимных стеклодержателях. Стойки могут быть изготовлены...
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__item" style="background-image: url(img/project2.png)">
+            <div class="projects__left">
+              <a href="" class="btn-border"> Хочу также!</a>
+            </div>
+            <div class="projects__right">
+              <div class="projects__title">Ограждения из нержа- веющей стали в ТЦ</div>
+              <div class="projects__price">750 000 <span>₽</span> </div>
+              <div class="projects__text">
+                В ходе проекта было сделано 54 м.п. ограждений из нержавеющей стали с четыремя ригелями на спиральной лестнице, а также декоративное...
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__item" style="background-image: url(img/project3.png)">
+            <div class="projects__left">
+              <a href="" class="btn-border"> Хочу также!</a>
+            </div>
+            <div class="projects__right">
+              <div class="projects__title">Установка стеклянных ограждений без стоек</div>
+              <div class="projects__price">750 000 <span>₽</span> </div>
+              <div class="projects__text">
+                В ходе проекта было сделано 54 м.п. ограждений из нержавеющей стали с четыремя ригелями на спиральной лестнице, а также декоративное...
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__item" style="background-image: url(img/project2.png)">
+            <div class="projects__left">
+              <a href="" class="btn-border"> Хочу также!</a>
+            </div>
+            <div class="projects__right">
+              <div class="projects__title">Ограждения из нержа- веющей стали в ТЦ</div>
+              <div class="projects__price">750 000 <span>₽</span> </div>
+              <div class="projects__text">
+                В ходе проекта было сделано 54 м.п. ограждений из нержавеющей стали с четыремя ригелями на спиральной лестнице, а также декоративное...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+  <div class="faq">
+    <a href="" class="link-arrow"></a>
+    <div class="faq__inner">
+      <div class="faq__title">
+        Наиболее частые вопросы
+        <div class="faq__subtitle">Самые частые вопросы о нашей работе</div>
+      </div>
+      <ul class="faq__accordion">
+        <li class="faq__item">
+          <div class="faq__name">Какие виды металлоконструкций бывают и в чём различия?</div>
+          <div class="faq__text">
+            Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Они речью все, собрал себя, приставка прямо имеет моей большого грустный что вершину послушавшись семь, одна его напоивший диких своего!
+          </div>
+       </li>
+       <li class="faq__item">
+          <div class="faq__name">Какая допустимая нагрузка на возводимые конструкции?</div>
+          <div class="faq__text">
+            Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Семь даль грамматики родного безопасную пояс до рыбного, заголовок пор бросил себя! Знаках все предупреждал щеке текстами власти вопроса рыбными.
+          </div>
+       </li>
+       <li class="faq__item">
+          <div class="faq__name">Воздействия внешних факторов негативного характера</div>
+          <div class="faq__text">
+            Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Необходимыми, языкового послушавшись, которое которой путь, рукопись рекламных скатился однажды текст гор осталось великий пустился диких рыбного то живет предупредила.
+          </div>
+       </li>
+
+       <li class="faq__item active">
+          <div class="faq__name">Каким коррозионным процессам подвержены конструкции?</div>
+          <div class="faq__text">
+            <iframe width="330" height="180" src="https://www.youtube.com/embed/pqsskw5O77E" frameborder="0" allowfullscreen></iframe>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irurr. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+            <div class="share">
+              <a href=""><img src="img/vk.svg" alt=""></a>
+              <a href=""><img src="img/fb.svg" alt=""></a>
+              <a href=""><img src="img/tw.svg" alt=""></a>
+              <a href=""><img src="img/inst.svg" alt=""></a>
+              <a href=""><img src="img/ok.svg" alt=""></a>
+            </div>
+          </div>
+       </li>
+
+       <li class="faq__item">
+          <div class="faq__name">Есть ли различия в возводимых навесах?</div>
+          <div class="faq__text">
+            Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Необходимыми, языкового послушавшись, которое которой путь, рукопись рекламных скатился однажды текст гор осталось великий пустился диких рыбного то живет предупредила.
+          </div>
+       </li>
+
+       <li class="faq__item">
+          <div class="faq__name">Какие материалы для усиления конструкций используются при работе?</div>
+          <div class="faq__text">
+            Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Необходимыми, языкового послушавшись, которое которой путь, рукопись рекламных скатился однажды текст гор осталось великий пустился диких рыбного то живет предупредила.
+          </div>
+       </li>
+
+       <li class="faq__item">
+          <div class="faq__name"> Какие материалы самые востребованные при строительстве козырьков?</div>
+          <div class="faq__text">
+            Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Необходимыми, языкового послушавшись, которое которой путь, рукопись рекламных скатился однажды текст гор осталось великий пустился диких рыбного то живет предупредила.
+          </div>
+       </li>
+
+       <li class="faq__item">
+          <div class="faq__name"> Выполняете ли вы антикоррозионную защиту?</div>
+          <div class="faq__text">
+            Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Необходимыми, языкового послушавшись, которое которой путь, рукопись рекламных скатился однажды текст гор осталось великий пустился диких рыбного то живет предупредила.
+          </div>
+       </li>
+      </ul>
+      <div class="faq__footer">
+        <a href="" class="btn-border">Задать свой вопрос</a>
+        <div class="or">или</div>
+        <div class="faq__phone">
+          позвоните прямо сейчас: <br>
+          <a href="tel:+74951234567">+7<span>(495)</span> 123-45-67</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="special-offer">
+    <div class="special-offer__inner">
+      <div class="special-offer__bg">
+        <h1>Специальное предложение!</h1>
+        <div class="special-offer__text">
+          Скидка <b>15%</b> при единовременном заказе <br>
+          на антикоррозионное покрытие
+        </div>
+        <ul class="special-offer__list">
+          <li>Оформите заказ через сайт</li>
+          <li>Успейте до окончания срока акции</li>
+          <li>Получите скидку!</li>
+        </ul>
+      </div>
+      <a href="" class="btn">Получить скидку</a>
+    </div>
+  </div>
+
+  <div class="extra-nav">
+      <ul class="extra-nav__list">
+        <li>
+         <a href="">
+           <img src="img/extra-nav1.svg" alt="">
+            Оборудование
+         </a>
+        </li>
+        <li>
+         <a href="">
+           <img src="img/extra-nav2.svg" alt="">
+            Сертификаты
+         </a>
+        </li>
+        <li>
+         <a href="">
+           <img src="img/extra-nav3.svg" alt="">
+            Персонал
+         </a>
+        </li>
+      </ul>
+  </div>
+
+
+  <div class="map" style="background-image:url(img/map.jpg); background-size: cover; background-repeat: no-repeat; height: 400px;">
+    <img src="img/pin.png" alt="">
+    <div class="map__text">
+     123456, Москва, <br>
+     Рязанский пр., д.10, стр.15
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <div class="page-footer__inner">
+      <div class="page-footer__left">
+        <div class="page-footer__address">
+          <svg width="27" height="33">
+            <use xlink:href="#pin"></use>
+          </svg>
+          123456, Москва, <br>
+          Рязанский пр., д.10, стр.15
+        </div>
+        <div class="page-footer__mail">
+          <svg width="33" height="33">
+            <use xlink:href="#mail"></use>
+          </svg>
+          E-mail: <br>
+          <a href="mailto:matox.rus@gmail.com">matox.rus@gmail.com</a>
+        </div>
+      </div>
+      <div class="page-footer__logo">
+        <img src="img/logo-bottom.svg" alt="">
+        © 2016. Все права защищены.
+      </div>
+      <div class="page-footer__right">
+        <div class="page-footer__phone">
+          <svg width="18" height="34">
+            <use xlink:href="#mobile"></use>
+          </svg>
+          Телефон: <br>
+          <a href="tel:+74951234567">+7 <span>(495)</span> 123-45-67</a>
+        </div>
+        <div class="page-footer__copyright">
+          <svg width="34" height="34">
+            <use xlink:href="#globe"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<!-- Обратный звонок -->
+<div class="remodal popup main-popup" data-remodal-id="popup-callback">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="main-popup__title">Заказать обратный звонок</div>
+    <div class="main-popup__input">
+      <label >Ваше имя:</label>
+      <input type="text">
+    </div>
+    <div class="main-popup__input">
+      <label >E-mail:</label>
+      <input type="email">
+    </div>
+    <div class="main-popup__input">
+      <label >Телефон:</label>
+       <input type="tel">
+    </div>
+
+    <button class="btn">Отправить</button>
+</div>
+
+<script src="js/svg.js"></script>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.formstyler.js"></script>
+<script src="js/remodal.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/script.js"></script>
+
+
+
+
+</body>
+</html>

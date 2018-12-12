@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Заголовок</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="http://{$smarty.server.HTTP_HOST}/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="http://{$smarty.server.HTTP_HOST}/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+
+<div class="mobile-header">
+  <div class="mobile-header__menu">
+    <div class="toggler"><span></span></div>
+    <ul class="mobile-header__nav">
+      <li><a href="">О компании</a></li>
+      <li><a href="">Новости</a></li>
+      <li><a href="">Сертификаты и лицензии</a></li>
+      <li><a href="services.html">Продукция</a></li>
+      <li><a href="projects.html">Проекты</a></li>
+      <li><a href="">Вопрос-ответ</a></li>
+      <li><a href="">Доставка</a></li>
+      <li><a href="">Контакты</a></li>
+    </ul>
+  </div>
+  <a class="mobile-header__logo" href="">
+    <img src="img/logo-min.svg" alt="" width="35" height="35">
+    <img src="img/logo-text.svg" alt="" width="100">
+  </a>
+  <div class="mobile-header__phone">
+    <div class="mobile-header__phone-icon">
+      <svg width="28" height="28">
+        <use xlink:href="#technology"></use>
+      </svg>
+    </div>
+    <div class="mobile-header__phone-toggled">
+      <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+      <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+      <a href="#popup-callback" class="btn-border">
+        <svg width="18" height="18">
+        <use xlink:href="#reload"></use>
+        </svg>
+        Обратный звонок
+      </a>
+    </div>
+  </div>
+  <div class="mobile-header__search">
+    <div class="mobile-header__search-icon">
+      <svg width="28" height="28">
+        <use xlink:href="#loupe"></use>
+      </svg>
+    </div>
+    <div class="mobile-header__search-toggled">
+      <div class="search">
+      <form>
+        <input type="search" placeholder="Поиск по сайту">
+         <div class="search__submit-wrapper">
+           <input type="submit" value="">
+         </div>
+      </form>
+  </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<header class="page-header">
+  <nav class="nav">
+    <ul class="nav__list">
+      <li><a href="">О компании</a></li>
+      <li><a href="">Новости</a></li>
+      <li><a href="">Сертификаты и лицензии</a></li>
+    </ul>
+  </nav>
+  <div class="search">
+      <form>
+        <input type="search" placeholder="Поиск по сайту">
+         <div class="search__submit-wrapper">
+           <input type="submit" value="">
+         </div>
+      </form>
+  </div>
+</header>
+
+
+
+  <div class="hero-header">
+    <div class="hero-header__inner">
+      <div class="hero-header__contacts">
+        <div class="hero-header__contacts-left">
+          <a href="" class="btn-border">
+            <svg width="18" height="18">
+              <use xlink:href="#calc"></use>
+            </svg>
+            Рассчитать заказ
+          </a>
+          <div class="hero-header__time">
+            Ежедневно <br>
+            <span>10:00-22:00</span>
+          </div>
+        </div>
+        <a class="logo" href="index.html">
+          <img src="img/logo.png" alt="">
+        </a>
+        <div class="hero-header__contacts-right">
+           <div class="hero-header__mobile">
+             <a href="tel:+74951234567">+7 <span class="orange">(495)</span> 123-45-67</a>
+             <a href="tel:+74951234567">+7 <span class="orange">(495)</span> 123-45-67</a>
+           </div>
+           <a href="#popup-callback" class="btn-border">
+            <svg width="18" height="18">
+              <use xlink:href="#reload"></use>
+            </svg>
+            Обратный звонок
+          </a>
+
+        </div>
+      </div>
+      <ul class="hero-header__nav">
+        <li><a href="">Продукция</a></li>
+        <li><a href="">Проекты</a></li>
+        <li><a href="">Вопрос-ответ</a></li>
+        <li><a href="">Доставка</a></li>
+        <li><a href="">Контакты</a></li>
+      </ul>
+
+    </div>
+  </div>
+
+  <div class="content">
+    <ul class="breadcrumbs">
+       <li><a href=" ">Главная</a></li>
+       <li>Рассчитать заказ</li>
+    </ul>
+
+    <h1>Рассчёт стоимости заказа ограждений</h1>
+    <div class="calculator">
+      <div class="calculator__text">
+        Данный рассчёт является предварительным. Наши эксперты предоставят точную стоимость после уточнения деталей.
+        <p class="calculator__text-small">
+          Пожалуйста, заполните необходимые поля и отправьте заявку. В течение 10 минут мы свяжемся с Вами.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <ol class="calculator__steps">
+          <div class="calculator__step">
+            <li>
+              Выберите вид поручня
+                <div class="calculator__view">
+                  <div class="calculator__view-item">
+                    <div class="calculator__view-photo">
+                      <img src="img/view1.png" alt="">
+                    </div>
+                    <ul class="calculator__view-options">
+                      <li>Инвалидный поручень 50.8 мм;</li>
+                      <li>Ригель 16 мм;</li>
+                      <li>Стойка 38.1 мм</li>
+                    </ul>
+                  </div>
+                  <div class="calculator__view-item checked">
+                    <div class="calculator__view-photo">
+                      <img src="img/view2.png" alt="">
+                    </div>
+                    <ul class="calculator__view-options">
+                      <li>Пластиковый поручень 49 мм;</li>
+                      <li>3 ригеля 16 мм; </li>
+                      <li>Стойка 38.1 мм</li>
+                    </ul>
+                  </div>
+                  <div class="calculator__view-item">
+                    <div class="calculator__view-photo">
+                      <img src="img/view1.png" alt="">
+                    </div>
+                    <ul class="calculator__view-options">
+                      <li>Поручень 50.8 мм;</li>
+                      <li>3 ригеля 16 мм;</li>
+                      <li>Бочонок;</li>
+                      <li>Стойка 38.1 мм</li>
+                    </ul>
+                  </div>
+                  <div class="calculator__view-item">
+                    <div class="calculator__view-photo">
+                      <img src="img/view2.png" alt="">
+                    </div>
+                    <ul class="calculator__view-options">
+                      <li>Поручень с пазом;</li>
+                      <li>Стекло 12 мм;</li>
+                      <li>Напольный профиль</li>
+                    </ul>
+                  </div>
+                  <div class="calculator__view-item">
+                    <div class="calculator__view-photo">
+                      <img src="img/view2.png" alt="">
+                    </div>
+                    <ul class="calculator__view-options">
+                      <li>Поручень 50,8 мм;</li>
+                      <li>3 ригеля 16 мм на сварке; </li>
+                      <li>Стойка 38.1 м</li>
+                    </ul>
+                  </div>
+                  <div class="calculator__view-item">
+                    <div class="calculator__view-photo">
+                      <img src="img/view1.png" alt="">
+                    </div>
+                    <ul class="calculator__view-options">
+                      <li>Поручень 50,8 мм;</li>
+                      <li>Стекло 8 мм;</li>
+                      <li>Стойка 38.1 м</li>
+                    </ul>
+                  </div>
+                  <div class="calculator__view-item">
+                    <div class="calculator__view-photo">
+                      <img src="img/view2.png" alt="">
+                    </div>
+                    <ul class="calculator__view-options">
+                      <li>Боковой крепёж 50 мм; </li>
+                      <li>3 ригеля 16 мм; </li>
+                      <li>Стойка 38 мм</li>
+                    </ul>
+                  </div>
+                  <div class="calculator__view-item">
+                    <div class="calculator__view-photo">
+                      <img src="img/view1.png" alt="">
+                    </div>
+                    <ul class="calculator__view-options">
+                      <li>Пристенный поручень 50.8 мм</li>
+                      <li>3 ригеля 16 мм; </li>
+                      <li>Стойка 38 мм</li>
+                    </ul>
+                  </div>
+                </div>
+            </li>
+          </div>
+
+          <div class="calculator__step">
+            <li>Выберите тип поручня
+              <div class="calculator__type">
+                <div class="calculator__type-item checked">
+                  <div class="calculator__type-photo">
+                    <div class="calculator__type-filter"></div>
+                    <img src="img/type1.png" alt="">
+                  </div>
+                  <div class="calculator__type-name">Прямой или пандус</div>
+                </div>
+                <div class="calculator__type-item">
+                  <div class="calculator__type-photo">
+                    <div class="calculator__type-filter"></div>
+                    <img src="img/type2.png" alt="">
+                  </div>
+                  <div class="calculator__type-name">Для лестничных маршей</div>
+                </div>
+              </div>
+
+            </li>
+          </div>
+
+          <div class="calculator__step">
+            <li>Параметры ограждения
+              <div class="calculator__fence">
+                 <div class="calculator__fence-item">
+                   <img src="img/location.svg" alt="">
+                   <div class="calculator__fence-name">Где будет находиться ограждение?</div>
+                   <label><input type="checkbox"> В здании</label>
+                  <label><input type="checkbox"> Снаружи</label>
+                 </div>
+                 <div class="calculator__fence-item">
+                   <img src="img/length.svg" alt="">
+                   <div class="calculator__fence-name">Укажите нужную длину марша:</div>
+                   <div class="calculator__meters">
+                    <input type="text"> метров
+                   </div>
+                 </div>
+                 <div class="calculator__fence-item">
+                   <img src="img/turn.svg" alt="">
+                   <div class="calculator__fence-name">Укажите количество поворотов:</div>
+                   <div class="calculator__meters">
+                    <input type="text"> метров
+                   </div>
+                 </div>
+              </div>
+            </li>
+          </div>
+
+          <div class="calculator__step calculator__step--last">
+           <div class="calculator__result">
+              <div class="calculator__result-left">
+                <li>Стоимость материалов</li>
+                <div class="calculator__result-price">
+                  от <span>80 752 <b>₽</b></span>
+                </div>
+                <ul class="calculator__result-view">
+                  <li>Пластиковый поручень 49 мм;</li>
+                  <li>3 ригеля 16 мм;</li>
+                  <li>Стойка 38.1 мм</li>
+                </ul>
+                <ul class="calculator__result-options">
+                  <li>Прямой или пандус;</li>
+                  <li>Внутри здания;</li>
+                  <li>Длина одного пролёта - 15 м;</li>
+                  <li>Количество стоек в одном пролёте - 16;</li>
+                  <li>Количество поворотов - 3;</li>
+                  <li>Общее количество стоек - 16;</li>
+                  <li>Общая длина ограждения - 15 м.</li>
+                </ul>
+              </div>
+              <div class="calculator__result-right">
+                <div class="calculator__result-desc">
+                  <p class="calculator__result-orange">Стоимость расчитана предварительно!</p>
+                  <p class="calculator__result-small">Окончательный расчёт стоимости материалов будет предоставлен после уточнения деталей</p>
+                </div>
+                <form class="form-price">
+                  <div class="form-price__title">Заявка на расчёт точной стоимости:</div>
+                  <input type="text"   placeholder="Ваше имя">
+                  <input type="text"   placeholder="Ваш телефон">
+                  <input class="btn" type="submit" value="Отправить заявку">
+                </form>
+              </div>
+
+           </div>
+          </div>
+  </ol>
+
+
+  <div class="map" style="background-image:url(img/map.jpg); background-size: cover; background-repeat: no-repeat; height: 400px;">
+    <img src="img/pin.png" alt="">
+    <div class="map__text">
+     123456, Москва, <br>
+     Рязанский пр., д.10, стр.15
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <div class="page-footer__inner">
+      <div class="page-footer__left">
+        <div class="page-footer__address">
+          <svg width="27" height="33">
+            <use xlink:href="#pin"></use>
+          </svg>
+          123456, Москва, <br>
+          Рязанский пр., д.10, стр.15
+        </div>
+        <div class="page-footer__mail">
+          <svg width="33" height="33">
+            <use xlink:href="#mail"></use>
+          </svg>
+          E-mail: <br>
+          <a href="mailto:matox.rus@gmail.com">matox.rus@gmail.com</a>
+        </div>
+      </div>
+      <div class="page-footer__logo">
+        <img src="img/logo-bottom.svg" alt="">
+        © 2016. Все права защищены.
+      </div>
+      <div class="page-footer__right">
+        <div class="page-footer__phone">
+          <svg width="18" height="34">
+            <use xlink:href="#mobile"></use>
+          </svg>
+          Телефон: <br>
+          <a href="tel:+74951234567">+7 <span>(495)</span> 123-45-67</a>
+        </div>
+        <div class="page-footer__copyright">
+          <svg width="34" height="34">
+            <use xlink:href="#globe"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<!-- Обратный звонок -->
+<div class="remodal popup main-popup" data-remodal-id="popup-callback">
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <div class="main-popup__title">Заказать обратный звонок</div>
+    <div class="main-popup__input">
+      <label >Ваше имя:</label>
+      <input type="text">
+    </div>
+    <div class="main-popup__input">
+      <label >E-mail:</label>
+      <input type="email">
+    </div>
+    <div class="main-popup__input">
+      <label >Телефон:</label>
+       <input type="tel">
+    </div>
+
+    <button class="btn">Отправить</button>
+</div>
+
+<script src="js/svg.js"></script>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.formstyler.js"></script>
+<script src="js/remodal.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/script.js"></script>
+
+
+
+</body>
+</html>

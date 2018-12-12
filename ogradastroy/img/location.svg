@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="62.188" height="76" viewBox="0 0 62.188 76">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        filter: url(#gradient-overlay-1);
+        fill-rule: evenodd;
+      }
+    </style>
+
+    <filter id="gradient-overlay-1" filterUnits="userSpaceOnUse">
+      <feImage x="0" y="0" width="62.18799999999999" height="76" preserveAspectRatio="none" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNjIuMTg3OTk5OTk5OTk5OTkiIGhlaWdodD0iNzYiPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZCIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIzMS4wOTQiIHkxPSI2OS4wOTQiIHgyPSIzMS4wOTQiIHkyPSI2LjkwNiI+CiAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZTEzMTI2Ii8+CiAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZjlhNjRkIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiLz48L3N2Zz4="/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend in2="SourceGraphic" result="gradientFill"/>
+    </filter>
+  </defs>
+  <path d="M62.125,32.982 C60.890,62.632 31.094,75.998 31.094,75.998 C31.094,75.998 1.345,61.932 0.065,33.008 C0.026,32.374 0.000,31.737 0.000,31.094 C0.000,13.921 13.921,-0.000 31.094,-0.000 C48.267,-0.000 62.188,13.921 62.188,31.094 C62.188,31.728 62.163,32.357 62.125,32.982 ZM31.094,4.594 C16.458,4.594 4.594,16.451 4.594,31.078 C4.594,45.705 16.458,57.562 31.094,57.562 C45.729,57.562 57.594,45.705 57.594,31.078 C57.594,16.451 45.729,4.594 31.094,4.594 Z" class="cls-1"/>
+</svg>
