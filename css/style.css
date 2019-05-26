@@ -1,134 +1,140 @@
 html {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 * {
-  -webkit-box-sizing: inherit;
-     -moz-box-sizing: inherit;
-          box-sizing: inherit;
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
 }
 button {
-  cursor: pointer;
+	cursor: pointer;
 }
 body {
-  margin: 0;
-  font-family: 'Alegreya Sans', sans-serif;
-  color: #909090;
-  font-size: 16px;
-  font-weight: 400;
-  background-color: #fff;
+	margin: 0;
+	font-family: "Alegreya Sans", sans-serif;
+	color: #909090;
+	font-size: 16px;
+	font-weight: 400;
+	background-color: #fff;
 }
 a {
-  color: #909090;
-  text-decoration: none;
-  -webkit-transition: color 0.2s;
-  -o-transition: color 0.2s;
-  transition: color 0.2s;
+	color: #909090;
+	text-decoration: none;
+	-webkit-transition: color 0.2s;
+	-o-transition: color 0.2s;
+	transition: color 0.2s;
 }
 a:hover {
-  color: #000;
+	color: #000;
 }
 .works {
-  padding: 30px 15px;
-  text-align: left;
-  display: block;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+	padding: 30px 15px;
+	text-align: left;
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 .works__title {
-  font-size: 40px;
-  margin: 0;
-  color: #000;
-  font-weight: 500;
+	font-size: 40px;
+	margin: 0;
+	color: #000;
+	font-weight: 500;
 }
 .works__items {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 30px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin-top: 30px;
 }
 .works__item {
-  width: 50%;
-  margin-bottom: 20px;
-  background-color: #fff;
+	width: 50%;
+	margin-bottom: 20px;
+	background-color: #fff;
 }
 .works__subtitle {
-  display: block;
-  font-weight: 500;
-  color: #000;
-  font-size: 20px;
+	display: block;
+	font-weight: 500;
+	color: #000;
+	font-size: 20px;
+}
+.works__photo a {
+	display: block;
+	width: 90%;
+	overflow: hidden;
 }
 .works__photo img {
-  height: 200px;
-  width: 90%;
-  -webkit-transition: opacity .2s;
-  -o-transition: opacity .2s;
-  transition: opacity .2s;
-  object-fit: cover;
+	height: 200px;
+	width: 100%;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	object-fit: fill;
 }
 .works__photo img:hover {
-  opacity: .8;
+	opacity: 0.8;
+	transform: scale(1.1);
 }
 .works__pages {
-  text-align: left;
+	text-align: left;
 }
 .works__item-title {
-  color: #252525;
-  font-size: 18px;
+	color: #252525;
+	font-size: 18px;
 }
 @media (min-width: 320px) {
-  .works {
-    max-width: 100%;
-  }
+	.works {
+		max-width: 100%;
+	}
 }
 @media (min-width: 480px) {
-  .works {
-    max-width: 100%;
-  }
+	.works {
+		max-width: 100%;
+	}
 }
 @media (min-width: 768px) {
-  .works {
-    max-width: 678px;
-  }
+	.works {
+		max-width: 678px;
+	}
 }
 @media (min-width: 822px) {
-  .works {
-    max-width: 832px;
-  }
+	.works {
+		max-width: 832px;
+	}
 }
 @media (max-width: 767px) {
-  .works__title {
-    text-align: center;
-  }
-  .works__item {
-    width: 100%;
-    text-align: center;
-  }
-  .works__subtitle {
-    text-align: center;
-  }
+	.works__title {
+		text-align: center;
+	}
+	.works__item {
+		width: 100%;
+		text-align: center;
+	}
+	.works__subtitle {
+		text-align: center;
+	}
 
-  .works__photo img {
-    height: initial;
-  }
+	.works__photo img {
+		height: initial;
+	}
 }
 @media (min-width: 0) and (max-width: 768px) {
-  .works__items {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
+	.works__items {
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
 }
