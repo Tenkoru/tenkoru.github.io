@@ -26,7 +26,7 @@
     <header class="header">
         <div class="container">
             <div class="header__top">
-                <a href="/" class="logo">
+                <a href="index.html" class="logo">
                     <img src="img/logo.svg" width="64px" height="64px" alt="Лого">
                     <p class="logo__text">Планировщик поездок</p>
                 </a>
@@ -53,10 +53,10 @@
             <nav>
                 <ul class="sidebar__list" id="sidebarMain">
                     <li class="sidebar__item">
-                        <a href="javascript:void(0)" class="sidebar__link link">Мои друзья(1)</a>
+                        <a href="friends.html" class="sidebar__link link">Мои друзья(1)</a>
                     </li>
                     <li class="sidebar__item">
-                        <a href="javascript:void(0)" class="sidebar__link link">Мои поездки</a>
+                        <a href="index.html" class="sidebar__link link">Мои поездки</a>
                     </li>
                     <li class="sidebar__item">
                         <a href="javascript:void(0)" class="sidebar__link link" id="createNew">Создать новую поездку</a>
@@ -98,7 +98,7 @@
                     </label>
                     <label class="label sidebar__date-label">
                         <input type="text" class="input" required>
-                        <span class="input__placeholder">Окончание</span>
+                        <span class="input__placeholder">Конец</span>
                         <button type="button" class="sidebar__date-button"></button>
                     </label>
                     <label class="label label--nomb">
@@ -109,8 +109,8 @@
                 </form>
             </div>
             <div class="sidebar__bottom">
-                <a href="javascript:void(0)" class="link">Выйти из аккаунта</a>
-                <a href="javascript:void(0)" class="link">Сменить пароль</a>
+                <a href="auth.html" class="link">Выйти из аккаунта</a>
+                <a href="auth.html" class="link">Сменить пароль</a>
             </div>
         </div>
     </div>
@@ -192,96 +192,103 @@
                             <div class="card__image-wrapper">
                                 <img src="img/usa.jpg" width="330" height="270" alt="Usa" class="card__image">
                             </div>
-                            <div class="card__info">
-                                <p class="card__title">Америка</p>
-                                <p class="card__date">15 апреля - 29 мая</p>
-                                <p class="card__description">Описание</p>
-                            </div>
-                            <div class="card__other">
-                                <div class="card__stars stars stars--5">
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
+                            <div class="card__inner">
+                                <div class="card__info">
+                                    <p class="card__title">Америка</p>
+                                    <p class="card__date">15 апреля - 29 мая</p>
                                 </div>
-                                <a href="javascript:void(0)" class="card__edit link">
-                                    Редактировать
-                                </a>
+                                <div class="card__other">
+                                    <div class="card__stars stars stars--5">
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                    </div>
+                                    <a href="details.html" class="card__edit link">
+                                        Редактировать
+                                    </a>
+                                </div>
+                                <p class="card__description">Описание</p>
                             </div>
                         </li>
                         <li class="list__item card">
                             <div class="card__image-wrapper">
                                 <img src="img/Venice.jpg" width="330" height="270" alt="Venice" class="card__image">
                             </div>
-                            <div class="card__info">
-                                <p class="card__title">Венеция</p>
-                                <p class="card__date">15 января - 29 января</p>
-                                <p class="card__description">Описание</p>
-                            </div>
-                            <div class="card__other">
-                                <div class="card__stars stars stars--4">
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
+                            <div class="card__inner">
+                                <div class="card__info">
+                                    <p class="card__title">Венеция</p>
+                                    <p class="card__date">15 января - 29 января</p>
                                 </div>
-                                <a href="javascript:void(0)" class="card__edit link">
-                                    Редактировать
-                                </a>
+                                <div class="card__other">
+                                    <div class="card__stars stars stars--4">
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                    </div>
+                                    <a href="details.html" class="card__edit link">
+                                        Редактировать
+                                    </a>
+                                </div>
+                                <p class="card__description">Описание</p>
                             </div>
                         </li>
                         <li class="list__item card">
                             <div class="card__image-wrapper">
-                                <img src="img/usa.jpg" width="330" height="270" alt="Usa" class="card__image">
+                                <img src="img/spain.jpg" width="330" height="270" alt="Usa" class="card__image">
                             </div>
-                            <div class="card__info">
-                                <p class="card__title">Испания</p>
-                                <p class="card__date">1 октября - 18 октября</p>
-                                <p class="card__description">Описание</p>
-                            </div>
-                            <div class="card__other">
-                                <div class="card__stars stars stars--4">
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
+                            <div class="card__inner">
+                                <div class="card__info">
+                                    <p class="card__title">Испания</p>
+                                    <p class="card__date">1 октября - 18 октября</p>
+
                                 </div>
-                                <a href="javascript:void(0)" class="card__edit link">
-                                    Редактировать
-                                </a>
+                                <div class="card__other">
+                                    <div class="card__stars stars stars--4">
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                    </div>
+                                    <a href="details.html" class="card__edit link">
+                                        Редактировать
+                                    </a>
+                                </div>
+                                <p class="card__description">Описание</p>
                             </div>
                         </li>
 
@@ -294,64 +301,70 @@
                             <div class="card__image-wrapper">
                                 <img src="img/france.jpg" width="330" height="270" alt="france" class="card__image">
                             </div>
-                            <div class="card__info">
-                                <p class="card__title">Франция</p>
-                                <p class="card__date">15 декабря 2018 - 10 января 2019</p>
-                                <p class="card__description">Описание</p>
-                            </div>
-                            <div class="card__other">
-                                <div class="card__stars stars stars--2">
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
+                            <div class="card__inner">
+                                <div class="card__info">
+                                    <p class="card__title">Франция</p>
+                                    <p class="card__date">15 декабря 2018 - 10 января 2019</p>
+
                                 </div>
-                                <a href="javascript:void(0)" class="card__edit link">
-                                    Редактировать
-                                </a>
+                                <div class="card__other">
+                                    <div class="card__stars stars stars--2">
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                    </div>
+                                    <a href="details.html" class="card__edit link">
+                                        Редактировать
+                                    </a>
+                                </div>
+                                <p class="card__description">Описание</p>
                             </div>
                         </li>
                         <li class="list__item card">
                             <div class="card__image-wrapper">
                                 <img src="img/london.jpg" width="330" height="270" alt="London" class="card__image">
                             </div>
-                            <div class="card__info">
-                                <p class="card__title">Лондон</p>
-                                <p class="card__date">15 апреля - 29 мая</p>
-                                <p class="card__description">Описание</p>
-                            </div>
-                            <div class="card__other">
-                                <div class="card__stars stars stars--1">
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
+                            <div class="card__inner">
+                                <div class="card__info">
+                                    <p class="card__title">Лондон</p>
+                                    <p class="card__date">15 апреля - 29 мая</p>
+
                                 </div>
-                                <a href="javascript:void(0)" class="card__edit link">
-                                    Редактировать
-                                </a>
+                                <div class="card__other">
+                                    <div class="card__stars stars stars--1">
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                    </div>
+                                    <a href="details.html" class="card__edit link">
+                                        Редактировать
+                                    </a>
+                                </div>
+                                <p class="card__description">Описание</p>
                             </div>
                         </li>
                     </ul>
@@ -363,32 +376,35 @@
                             <div class="card__image-wrapper">
                                 <img src="img/greece.jpg" width="330" height="270" alt="Greece" class="card__image">
                             </div>
-                            <div class="card__info">
-                                <p class="card__title">Греция</p>
-                                <p class="card__date">14 февраля - 26 февраля</p>
-                                <p class="card__description">Описание</p>
-                            </div>
-                            <div class="card__other">
-                                <div class="card__stars stars stars--5">
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
-                                    <svg class="stars__svg">
-                                        <use xlink:href="#star" />
-                                    </svg>
+                            <div class="card__inner">
+                                <div class="card__info">
+                                    <p class="card__title">Греция</p>
+                                    <p class="card__date">14 февраля - 26 февраля</p>
+
                                 </div>
-                                <a href="javascript:void(0)" class="card__edit link">
-                                    Восстановить
-                                </a>
+                                <div class="card__other">
+                                    <div class="card__stars stars stars--5">
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                        <svg class="stars__svg">
+                                            <use xlink:href="#star" />
+                                        </svg>
+                                    </div>
+                                    <a href="details.html" class="card__edit link">
+                                        Восстановить
+                                    </a>
+                                </div>
+                                <p class="card__description">Описание</p>
                             </div>
                         </li>
                     </ul>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PlanTrip</title>
+</head>
+
+<body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="star" viewBox="0 0 49.94 49.94">
+            <path d="M48.856,22.73c0.983-0.958,1.33-2.364,0.906-3.671c-0.425-1.307-1.532-2.24-2.892-2.438l-12.092-1.757
+                c-0.515-0.075-0.96-0.398-1.19-0.865L28.182,3.043c-0.607-1.231-1.839-1.996-3.212-1.996c-1.372,0-2.604,0.765-3.211,1.996
+                L16.352,14c-0.23,0.467-0.676,0.79-1.191,0.865L3.069,16.622c-1.359,0.197-2.467,1.131-2.892,2.438
+                c-0.424,1.307-0.077,2.713,0.906,3.671l8.749,8.528c0.373,0.364,0.544,0.888,0.456,1.4L8.224,44.701
+                c-0.183,1.06,0.095,2.091,0.781,2.904c1.066,1.267,2.927,1.653,4.415,0.871l10.814-5.686c0.452-0.237,1.021-0.235,1.472,0
+                l10.815,5.686c0.526,0.277,1.087,0.417,1.666,0.417c1.057,0,2.059-0.47,2.748-1.288c0.687-0.813,0.964-1.846,0.781-2.904
+                l-2.065-12.042c-0.088-0.513,0.083-1.036,0.456-1.4L48.856,22.73z"></path>
+        </symbol>
+    </svg>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.svg" width="64px" height="64px" alt="Лого">
+                    <p class="logo__text">Планировщик поездок</p>
+                </a>
+                <a href="javascript:void(0)" class="profile" id="menuButton">
+                    <div class="profile__image"></div>
+                    <p class="profile__text">Профиль</p>
+                </a>
+            </div>
+            <div class="header__bottom">
+                <h1 class="page-title">Информация о поездке</h1>
+            </div>
+        </div>
+    </header>
+    <div class="overlay"></div>
+    <div class="sidebar">
+        <div class="sidebar__inner">
+            <label class="label sidebar__close">
+                <button class="sidebar__close-btn" type="button"></button>
+            </label>
+            <div class="profile sidebar__profile">
+                <div class="profile__image sidebar__profile-image"></div>
+                <p class="profile__text">Александр</p>
+            </div>
+            <nav>
+                <ul class="sidebar__list" id="sidebarMain">
+                    <li class="sidebar__item">
+                        <a href="friends.html" class="sidebar__link link">Мои друзья(1)</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="index.html" class="sidebar__link link">Мои поездки</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="javascript:void(0)" class="sidebar__link link" id="createNew">Создать новую поездку</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar__new" id="sidebarNew">
+                <a href="javascript:void(0)" class="back-arrow sidebar__arrow">
+                    <svg class="back-arrow__svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 324.549 324.549"
+                        style="enable-background:new 0 0 324.549 324.549;" xml:space="preserve">
+                        <path d="M135.992,298.159c-6.009,0-11.652-2.339-15.906-6.587L6.632,178.125c-1.054-1.054-2.018-2.23-2.854-3.47
+                                                                    c-0.315-0.469-0.572-0.945-0.816-1.44c-0.636-1.138-0.977-1.78-1.26-2.468c-0.231-0.553-0.424-1.189-0.604-1.825L0.9,168.253
+                                                                    c-0.174-0.533-0.341-1.073-0.456-1.632C0.148,165.091,0,163.638,0,162.173c0-1.472,0.148-2.937,0.431-4.377
+                                                                    c0.135-0.643,0.289-1.15,0.45-1.652l0.199-0.668c0.18-0.649,0.379-1.285,0.636-1.915s0.585-1.234,0.932-1.838
+                                                                    c0.553-1.06,0.816-1.555,1.138-2.031c0.842-1.253,1.78-2.41,2.809-3.432L120.098,32.762c8.496-8.496,23.31-8.496,31.806,0
+                                                                    c4.248,4.248,6.587,9.897,6.587,15.906s-2.339,11.658-6.587,15.906l-75.11,75.098h225.261c12.404,0,22.494,10.09,22.494,22.494
+                                                                    s-10.09,22.494-22.494,22.494H76.794l75.104,75.104c4.248,4.248,6.587,9.897,6.587,15.906s-2.339,11.652-6.587,15.906
+                                                                    C147.65,295.832,142.001,298.159,135.992,298.159z M135.992,39.029c-2.571,0-4.994,1.003-6.819,2.821L15.675,155.348
+                                                                    c-0.45,0.45-0.848,0.945-1.208,1.478l-1.375,3.329c-0.167,0.72-0.244,1.362-0.244,2.012s0.077,1.285,0.193,1.922l1.414,3.361
+                                                                    c0.373,0.598,0.791,1.105,1.26,1.568l113.459,113.459c3.638,3.638,9.994,3.638,13.631,0c1.819-1.819,2.821-4.242,2.821-6.819
+                                                                    c0-2.577-1.003-4.994-2.821-6.819l-97.045-97.045h256.289c5.309,0,9.64-4.325,9.64-9.64s-4.332-9.64-9.64-9.64H45.765
+                                                                    l97.045-97.039c1.819-1.825,2.821-4.242,2.821-6.819c0-2.571-1.003-4.994-2.821-6.812
+                                                                    C140.992,40.038,138.569,39.029,135.992,39.029z">
+                        </path>
+                    </svg>
+                    <span class="back-arrow__text">Вернуться назад</span>
+                </a>
+                <h3 class="sidebar__new-title">Создать новую поездку</h3>
+                <form action="" class="sidebar__form">
+                    <label class="label">
+                        <input type="text" class="input" required>
+                        <span class="input__placeholder">Введите название</span>
+                    </label>
+                    <label class="label sidebar__date-label">
+                        <input type="text" class="input" required>
+                        <span class="input__placeholder">Начало</span>
+                        <button type="button" class="sidebar__date-button"></button>
+                    </label>
+                    <label class="label sidebar__date-label">
+                        <input type="text" class="input" required>
+                        <span class="input__placeholder">Конец</span>
+                        <button type="button" class="sidebar__date-button"></button>
+                    </label>
+                    <label class="label label--nomb">
+                        <textarea type="text" class="textarea sidebar__textarea"></textarea>
+                        <span class="input__placeholder">Описание</span>
+                    </label>
+                    <button type="submit" class="button sidebar__new-submit">Добавить</button>
+                </form>
+            </div>
+            <div class="sidebar__bottom">
+                <a href="auth.html" class="link">Выйти из аккаунта</a>
+                <a href="auth.html" class="link">Сменить пароль</a>
+            </div>
+        </div>
+    </div>
+    <main clas="details friends">
+        <div class="container">
+            <div class="details__header">
+                <a href="javascript:void(0)" class="back-arrow details__back-arrow">
+                    <svg class="back-arrow__svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 324.549 324.549"
+                        style="enable-background:new 0 0 324.549 324.549;" xml:space="preserve">
+                        <path d="M135.992,298.159c-6.009,0-11.652-2.339-15.906-6.587L6.632,178.125c-1.054-1.054-2.018-2.23-2.854-3.47
+                                                        c-0.315-0.469-0.572-0.945-0.816-1.44c-0.636-1.138-0.977-1.78-1.26-2.468c-0.231-0.553-0.424-1.189-0.604-1.825L0.9,168.253
+                                                        c-0.174-0.533-0.341-1.073-0.456-1.632C0.148,165.091,0,163.638,0,162.173c0-1.472,0.148-2.937,0.431-4.377
+                                                        c0.135-0.643,0.289-1.15,0.45-1.652l0.199-0.668c0.18-0.649,0.379-1.285,0.636-1.915s0.585-1.234,0.932-1.838
+                                                        c0.553-1.06,0.816-1.555,1.138-2.031c0.842-1.253,1.78-2.41,2.809-3.432L120.098,32.762c8.496-8.496,23.31-8.496,31.806,0
+                                                        c4.248,4.248,6.587,9.897,6.587,15.906s-2.339,11.658-6.587,15.906l-75.11,75.098h225.261c12.404,0,22.494,10.09,22.494,22.494
+                                                        s-10.09,22.494-22.494,22.494H76.794l75.104,75.104c4.248,4.248,6.587,9.897,6.587,15.906s-2.339,11.652-6.587,15.906
+                                                        C147.65,295.832,142.001,298.159,135.992,298.159z M135.992,39.029c-2.571,0-4.994,1.003-6.819,2.821L15.675,155.348
+                                                        c-0.45,0.45-0.848,0.945-1.208,1.478l-1.375,3.329c-0.167,0.72-0.244,1.362-0.244,2.012s0.077,1.285,0.193,1.922l1.414,3.361
+                                                        c0.373,0.598,0.791,1.105,1.26,1.568l113.459,113.459c3.638,3.638,9.994,3.638,13.631,0c1.819-1.819,2.821-4.242,2.821-6.819
+                                                        c0-2.577-1.003-4.994-2.821-6.819l-97.045-97.045h256.289c5.309,0,9.64-4.325,9.64-9.64s-4.332-9.64-9.64-9.64H45.765
+                                                        l97.045-97.039c1.819-1.825,2.821-4.242,2.821-6.819c0-2.571-1.003-4.994-2.821-6.812
+                                                        C140.992,40.038,138.569,39.029,135.992,39.029z"></path>
+                    </svg>
+                    <span class="back-arrow__text">Вернуться назад</span>
+                </a>
+            </div>
+            <div class="details__content">
+                <h2 class="details__title">Добавить друга:</h2>
+                <div class="details__top">
+                    <form action="" class="searchForm friends__search-form">
+                        <label class="label friends__label">
+                            <input type="text" class="input input__common friends_input" required>
+                            <span class="input__placeholder">номер телефона или
+                                email</span>
+                        </label>
+                        <button type="submit" class="friends__submit">
+                            <svg class="friends__submit-svg" width="25" height="22" viewBox="0 0 25 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.6433 9.46605H14.2441V1.19477C14.2441 0.817982 13.6627 0.000976562 12.4999 0.000976562C11.3372 0.000976562 10.7558 0.818027 10.7558 1.19477V9.46609H1.35659C0.928465 9.46605 0 9.97769 0 11.0009C0 12.0241 0.928465 12.5358 1.35659 12.5358H10.7558V20.8071C10.7558 21.1838 11.3372 22.0009 12.5 22.0009C13.6628 22.0009 14.2442 21.1838 14.2442 20.8071V12.5358H23.6434C24.0715 12.5358 25 12.0242 25 11.0009C25 9.9776 24.0714 9.46605 23.6433 9.46605Z" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="friends__lists">
+                    <div class="friends__block">
+                        <h2 class="friends__list-title">
+                            Заявки в друзья:
+                        </h2>
+                        <ul class="friends__list">
+                            <li class="friends__item">
+                                <img src="img/avatarPlaceholder.png" alt="avatar" class="friends__image">
+                                <p class="friends__name">Михаил</p>
+                                <a href="javascript:void(0)" class="button friends__link">Добавить</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="friends__block">
+                        <h2 class="friends__list-title">
+                            Мои друзья:
+                        </h2>
+                        <ul class="friends__list">
+                            <li class="friends__item">
+                                <img src="img/avatarPlaceholder.png" alt="avatar" class="friends__image">
+                                <p class="friends__name">Антон</p>
+                                <a href="javascript:void(0)" class="button friends__link">Посмотреть</a>
+                            </li>
+                            <li class="friends__item">
+                                <img src="img/avatarPlaceholder.png" alt="avatar" class="friends__image">
+                                <p class="friends__name">Евгений</p>
+                                <a href="javascript:void(0)" class="button friends__link">Посмотреть</a>
+                            </li>
+                            <li class="friends__item">
+                                <img src="img/avatarPlaceholder.png" alt="avatar" class="friends__image">
+                                <p class="friends__name">Анна</p>
+                                <a href="javascript:void(0)" class="button friends__link">Посмотреть</a>
+                            </li>
+                            <li class="friends__item">
+                                <img src="img/avatarPlaceholder.png" alt="avatar" class="friends__image">
+                                <p class="friends__name">Кристина</p>
+                                <a href="javascript:void(0)" class="button friends__link">Посмотреть</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

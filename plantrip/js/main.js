@@ -6,6 +6,24 @@ const displayButtonContainer = document.querySelector(`.displayButtons`);
 const listSortArrow = document.querySelector(`.list__sort-arrow`);
 const menuButton = document.querySelector(`#menuButton`);
 const createNewButton = document.querySelector(`#createNew`);
+const destinations = document.querySelector(`.destinations`);
+
+function debounce(func, wait, immediate) {
+	setTimeout(function() {
+		var timeout;
+		return (function() {
+			var context = this, args = arguments;
+			var later = function() {
+				timeout = null;
+				if (!immediate) func.apply(context, args);
+			};
+			var callNow = immediate && !timeout;
+			clearTimeout(timeout);
+			timeout = setTimeout(later, wait);
+			if (callNow) func.apply(context, args);
+		})();
+	}, 250);
+};
 
 if (auth) {
 	const passwordSwitchers = [].slice.call(
@@ -77,7 +95,13 @@ if (displayButtonContainer) {
     function changeListStyle(event) {
         const element = event.target.closest(`.displayButtons__button`);
         const listContent = document.querySelector(`.list__content`);
-        const buttons = [].slice.call(displayButtonContainer.querySelectorAll(`.displayButtons__button`));
+		const buttons = [].slice.call(displayButtonContainer.querySelectorAll(`.displayButtons__button`));
+		
+		function checkForMobile() {
+			if (window.matchMedia('(max-width: 640px)').matches) {
+				listContent.classList.remove('list__content--grid');
+			}
+		}
 
         if (element) {
             if (element.id === `displayButtonGrid`) {
@@ -93,7 +117,9 @@ if (displayButtonContainer) {
                 });
                 element.classList.add(`displayButtons__button--active`);
             }
-        }
+		}
+		
+		window.addEventListener(`resize`, debounce.bind(null, checkForMobile, 250));
 
     }
 
@@ -130,19 +156,37 @@ if (menuButton) {
 }
 
 if (createNewButton) {
-	const backArrow = document.querySelector('.sidebar__arrow');
+	const backArrow = document.querySelector(`.sidebar__arrow`);
 	const mainSidebar = document.querySelector(`#sidebarMain`);
-	const sidebarCreateNew = document.querySelector('#sidebarNew');
+	const sidebarCreateNew = document.querySelector(`#sidebarNew`);
 
 	function openCreateNewBlock() {
-		mainSidebar.classList.add('sidebar__list--disable');
-		sidebarCreateNew.classList.add('sidebar__new--active');
+		mainSidebar.classList.add(`sidebar__list--disable`);
+		sidebarCreateNew.classList.add(`sidebar__new--active`);
 	}
 	function closeCreateNewBlock() {
-		mainSidebar.classList.remove('sidebar__list--disable');
-		sidebarCreateNew.classList.remove('sidebar__new--active');
+		mainSidebar.classList.remove(`sidebar__list--disable`);
+		sidebarCreateNew.classList.remove(`sidebar__new--active`);
 	}
 
-	createNewButton.addEventListener('click', openCreateNewBlock);
-	backArrow.addEventListener('click', closeCreateNewBlock);
+	createNewButton.addEventListener(`click`, openCreateNewBlock);
+	backArrow.addEventListener(`click`, closeCreateNewBlock);
+}
+
+if(destinations) {
+	function closeList() {
+		const curTarget = event.target;
+		if (curTarget.classList.contains(`destinations__button--dropdown`)) {
+			const nextTable = curTarget.closest(`.destinations__place-info`).nextSibling.nextSibling;
+			if (curTarget.classList.contains(`destinations__button--dropdown--active`)) {
+				nextTable.classList.remove('destinations--hide');
+				curTarget.classList.remove('destinations__button--dropdown--active');
+			} else {
+				nextTable.classList.add('destinations--hide');
+				curTarget.classList.add('destinations__button--dropdown--active');
+			}
+		}
+	}
+
+	destinations.addEventListener(`click`, closeList)
 }
