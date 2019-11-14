@@ -1,7 +1,0 @@
-<button *ngFor="let button of buttons" type="button" class="displayButtons__button"
-  [ngClass]="{'displayButtons__button--active': activeButton === button.type}"
-  (click)="changeTableDisplay(button.type)">
-  <svg-icon [src]="button.icon"
-    [svgStyle]="{ 'width.px': 38, 'height.px': 30, 'fill': activeButton === button.type ? iconActiveColor : iconColor }">
-  </svg-icon>
-</button>

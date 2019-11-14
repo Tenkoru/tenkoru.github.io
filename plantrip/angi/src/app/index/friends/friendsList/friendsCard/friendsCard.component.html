@@ -1,4 +1,0 @@
-<img src="{{card.avatar}}" alt="avatar" class="friends__image">
-<p class="friends__name">{{card.name}}</p>
-<a *ngIf="isAccepted" [routerLink]="link" class="button friends__link">Посмотреть</a>
-<button *ngIf="!isAccepted" class="button friends__link" (click)="buttonHandler()">Подтвердить</button>
