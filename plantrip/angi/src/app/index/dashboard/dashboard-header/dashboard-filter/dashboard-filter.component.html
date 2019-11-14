@@ -1,0 +1,13 @@
+<div class="select__wrapper list__sort" [formGroup]="selectProps">
+  <select name="sortType" class="select" formControlName="select" (change)="changeSelectHandler($event)">
+    <option *ngFor="let option of filterOptions" [ngValue]="option.value">{{ option.text }}</option>
+  </select>
+  <svg-icon [src]="buttonImage"
+    [svgStyle]="{ 'width.px': 18, 'height.px': 18, 'fill': iconColor }">
+  </svg-icon>
+</div>
+<button type="button" class="list__sort-arrow" [ngClass]="{'list__sort-arrow--up': isArrowUp}" (click)="ButtonclickListener()">
+  <svg-icon [src]="sortArrowImg"
+    [svgStyle]="{ 'width.px': 35, 'height.px': 35, 'fill': iconColor }">
+  </svg-icon>
+</button>

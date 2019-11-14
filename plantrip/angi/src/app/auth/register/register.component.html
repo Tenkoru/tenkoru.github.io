@@ -1,0 +1,12 @@
+<div class="auth__wrapper">
+  <app-back-arrow class="auth__arrow" [props]="backArrowProps"></app-back-arrow>
+  <form class="auth__form auth__form--auth" action="">
+    <app-auth-title [props]="titleProps"></app-auth-title>
+    <div class="auth__labels">
+      <app-label [props]="telProps"></app-label>
+      <app-label [props]="passwordProps"></app-label>
+      <app-label [props]="passwordRepeatProps"></app-label>
+    </div>
+    <app-button [props]="submitButtonProps"></app-button>
+  </form>
+</div>

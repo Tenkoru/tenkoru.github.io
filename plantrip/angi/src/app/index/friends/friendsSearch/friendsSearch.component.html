@@ -1,0 +1,12 @@
+<form [formGroup]="requestForm" class="searchForm friends__search-form" (ngSubmit)="submit()">
+  <label class="label friends__label">
+    <input type="text" [ngClass]="inputClasses" formControlName="input">
+    <span class="input__placeholder">Введите email</span>
+  </label>
+  <button type="submit" class="friends__submit" (mouseenter)="mousehover()" (mouseleave)="mouseleave()">
+    <svg-icon [src]="buttonImage"
+      [svgStyle]="{ 'width.px': 25, 'height.px': 25, 'fill': iconCurrentColor, 'transition': 'all 0.3s' }">
+    </svg-icon>
+  </button>
+</form>
+<span [ngClass]="submitClasses">{{submitMessageText}}</span>

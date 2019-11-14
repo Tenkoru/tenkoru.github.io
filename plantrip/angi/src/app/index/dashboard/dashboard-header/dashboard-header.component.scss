@@ -1,0 +1,21 @@
+@import "variables.scss";
+
+:host {
+    display: flex;
+    align-items: flex-start;
+    @media (max-width: $screenTabletBig) {
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+}
+form {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+    @media (max-width: $screenMobileS) {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}

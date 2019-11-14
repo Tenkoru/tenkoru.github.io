@@ -1,0 +1,18 @@
+<ng-container *ngIf="friendsLists">
+  <div *ngIf="friendsLists.unaccepted.length" class="friends__block">
+    <h2 class="friends__list-title">{{unacceptedListTitle}}</h2>
+    <ul class="friends__list">
+      <li *ngFor="let item of friendsLists.unaccepted" class="friends__item">
+        <app-friendsCard [isAccepted]="false" [card]="item"></app-friendsCard>
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="friendsLists.accepted.length" class="friends__block">
+    <h2 class="friends__list-title">{{acceptedListTitle}}</h2>
+    <ul class="friends__list">
+      <li *ngFor="let item of friendsLists.accepted" class="friends__item">
+        <app-friendsCard [isAccepted]="true" [card]="item"></app-friendsCard>
+      </li>
+    </ul>
+  </div>
+</ng-container>

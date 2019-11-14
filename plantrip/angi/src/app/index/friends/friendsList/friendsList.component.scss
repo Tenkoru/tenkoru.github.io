@@ -1,0 +1,40 @@
+@import "variables.scss";
+
+:host {
+  max-width: 700px;
+  width: 100%;
+  margin-top: 40px;
+}
+.friends__block {
+  margin-bottom: 50px;
+  @media (max-width: $screenMobileS) {
+    margin-bottom: 20px;
+  }
+}
+.friends__list-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.565rem;
+  font-weight: 500;
+}
+.friends__list {
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+  &::after {
+    content: "";
+    flex: auto;
+  }
+}
+.friends__item {
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 0;
+  padding-left: 0;
+}

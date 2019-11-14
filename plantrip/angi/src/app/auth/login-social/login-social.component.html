@@ -1,0 +1,5 @@
+<button [type]="social.type" (click)="socialLogin(social.name)"
+  [className]="'button auth__social auth__social--' + social.className" *ngFor="let social of socials">
+  <svg-icon [src]="social.image" [svgStyle]="{ 'width.px': 35, 'height.px': 35, 'fill': iconColor }"></svg-icon>
+  <span>{{social.text}}</span>
+</button>

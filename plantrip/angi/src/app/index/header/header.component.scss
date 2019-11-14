@@ -1,0 +1,12 @@
+@import "variables.scss";
+
+:host {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 6px solid $headerBorderColor;
+    @media (max-width: $screenMobile) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

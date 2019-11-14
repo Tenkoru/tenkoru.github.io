@@ -1,0 +1,61 @@
+.stars {
+	margin-top: 8px;
+}
+.list__content--grid {
+	.stars {
+		margin-top: 0;
+		display: flex;
+		align-items: center;
+	}
+}
+.stars__svg {
+	width: 15px;
+	height: 15px;
+	margin-right: 3px;
+	margin-left: 3px;
+	fill: $starEmptyColor;
+	transition: all .3s;
+}
+.stars[data-stars="1"] .stars__svg:nth-child(1)  {
+	fill: $starColor;
+}
+
+.stars[data-stars="2"] .stars__svg:nth-child(1)  {
+	fill: $starColor;
+}
+
+.stars[data-stars="2"] .stars__svg:nth-child(2)  {
+	fill: $starColor;
+}
+
+.stars[data-stars="3"] .stars__svg:nth-child(1)  {
+	fill: $starColor;
+}
+
+.stars[data-stars="3"] .stars__svg:nth-child(2)  {
+	fill: $starColor;
+}
+
+.stars[data-stars="3"] .stars__svg:nth-child(3)  {
+	fill: $starColor;
+}
+
+.stars[data-stars="4"] .stars__svg:nth-child(1)  {
+	fill: $starColor;
+}
+
+.stars[data-stars="4"] .stars__svg:nth-child(2)  {
+	fill: $starColor;
+}
+
+.stars[data-stars="4"] .stars__svg:nth-child(3)  {
+	fill: $starColor;
+}
+
+.stars[data-stars="4"] .stars__svg:nth-child(4)  {
+	fill: $starColor;
+}
+
+.stars[data-stars="5"] .stars__svg  {
+	fill: $starColor;
+}

@@ -1,0 +1,58 @@
+.back-arrow {
+	padding-left: 30px;
+	position: relative;
+	text-decoration: none;
+	.back-arrow__svg {
+		position: absolute;
+		content: "";
+		width: 25px;
+		height: 25px;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		transition: all .3s;
+		fill: $backArrowColor;
+	}
+	&:focus {
+		.back-arrow__text {
+			outline: none;
+			&::after {
+				opacity: 1;
+			}
+		}
+	}
+	&:hover {
+		.back-arrow__text {
+			opacity: 1;
+			&::after {
+				opacity: 1;
+			}
+        }
+        .back-arrow__svg {
+            transform: translate(-5px, -50%);
+        }
+	}
+}
+.back-arrow__text {
+	line-height: 1.25;
+	font-weight: 400;
+	color: $backArrowColor;
+	transition: all 0.3s;
+	opacity: 0.8;
+	text-decoration: none;
+	position: relative;
+    text-transform: lowercase;
+    white-space: nowrap;
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 100%;
+		height: 1px;
+		background-color: $backArrowColor;
+		transform: translate(-50%, 0);
+		transition: all 0.3s;
+		opacity: 0;
+	}
+}

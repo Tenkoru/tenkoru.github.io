@@ -1,0 +1,39 @@
+@import "variables.scss";
+
+:host {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 100%;
+  @media (max-width: $screenTabletBig) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+.list__type-title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 1.4375rem;
+  font-weight: 600;
+}
+.list__type {
+  margin-bottom: 55px;
+}
+.list__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.list__type--grid {
+  margin-bottom: 35px;
+  @media (max-width: $screenTabletBig) {
+    margin-bottom: 25px;
+  }
+  .list__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}

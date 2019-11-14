@@ -1,0 +1,14 @@
+<h3>Добавить место:
+</h3>
+<form class="searchForm details__search-form">
+  <label class="label">
+    <input [ngClass]="inputClasses" #search [formControl]="searchControl" type="text" placeholder="" autocorrect="true" autocapitalize="false" spellcheck="true">
+    <span class="input__placeholder searchForm__input-placeholder">Место, город или
+      страна</span>
+  </label>
+  <button type="button" class="searchForm__submit">
+    <svg-icon [src]="searchButtonImage"
+      [svgStyle]="{ 'width.px': 25, 'height.px': 25, 'fill': searchIconColor }">
+    </svg-icon>
+  </button>
+</form>

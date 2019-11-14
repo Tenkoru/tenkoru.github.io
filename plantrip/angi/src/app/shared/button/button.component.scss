@@ -1,0 +1,73 @@
+@import "variables.scss";
+
+:host {
+  width: 100%;
+}
+
+.button {
+  height: 41px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #3c9891;
+  font-size: 1.25rem;
+  line-height: 41px;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
+  text-transform: lowercase;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:focus {
+    outline-color: $inputButtonOutlineColor;
+  }
+}
+.button:hover {
+  background-color: $buttonBgHoverColor;
+}
+@media (max-width: $screenMobile) {
+  .button {
+    font-size: 16px;
+  }
+}
+.sidebar__new-submit {
+  width: 100%;
+}
+.auth__button {
+  background-color: $authButtonBgColor;
+  width: 100%;
+  transition: all 0.3s;
+  &:focus {
+    outline-color: $authPasswordButtonOutlineColor;
+  }
+}
+.auth__button:hover {
+  background-color: $authButtonBgHoverColor;
+  transform: translateY(2px);
+}
+
+.auth__button--fade {
+  background-color: $authButtonBgFadeColor;
+}
+.auth__button--fade:hover {
+  background-color: $authButtonBgFadeHoverColor;
+}
+.details__button {
+  width: 210px;
+  margin-bottom: 12px;
+  @media (max-width: $screenMobileS) {
+    width: 100%;
+  }
+}
+.fullWidth {
+  width: 100%;
+}
+.modal--decline {
+  border: 2px solid $inputBorderColor;
+  background-color: #fff;
+  color: $inputBorderColor;
+  &:hover {
+    color: #fff;
+  }
+}

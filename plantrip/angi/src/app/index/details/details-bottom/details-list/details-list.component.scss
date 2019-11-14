@@ -1,0 +1,194 @@
+@import "variables.scss";
+
+.destinations {
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  background-color: $inputBgColor;
+  border: 1px solid $inputBorderColor;
+  border-bottom: none;
+  border-radius: 3px;
+  @media (max-width: $screenMobile) {
+    margin-top: 35px;
+  }
+}
+.destinations__place-info {
+  display: flex;
+  min-height: 70px;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  padding-left: 5px;
+  border-bottom: 1px solid $inputBorderColor;
+  border-radius: 3px;
+  position: relative;
+  @media (max-width: $screenMobile) {
+    min-height: 50px;
+  }
+  @media (max-width: $screenMobileS) {
+    padding-right: 5px;
+  }
+}
+.destinations__name {
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @media (max-width: $screenMobileS) {
+    width: 50%;
+  }
+}
+.destinations__date {
+  min-width: 215px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 200;
+  @media (max-width: $screenMobile) {
+    font-size: 16px;
+  }
+  @media (max-width: $screenMobileS) {
+    width: 50%;
+    min-width: 0;
+    text-align: left;
+    line-height: 1.3;
+  }
+}
+.destinations__place--country {
+  .destinations__name {
+    font-size: 1.875rem;
+    font-weight: 500;
+  }
+}
+.destinations__controls {
+  display: flex;
+  min-width: 80px;
+  margin-left: 20px;
+  justify-content: flex-end;
+  @media (max-width: $screenMobile) {
+    margin-left: 10px;
+  }
+}
+.destination__edit {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;  
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+.destination__edit--pen {
+  margin-right: auto;
+}
+.destinations__button {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  border: none;
+  background-color: transparent;
+  background-size: 30px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all 0.3s;
+  @media (max-width: $screenMobileS) {
+    margin-left: 0;
+  }
+
+  &:focus {
+    outline-color: $inputButtonOutlineColor;
+  }
+}
+.destinations__button--dropdown {
+  //background-image: url('../img/down-chevron.svg');
+  transform: rotate(180deg);
+  transition: all 0.3s;
+}
+.destinations__button--dropdown--active {
+  transform: rotate(0deg);
+}
+.destinations__cities,
+.destinations__places {
+  padding-left: 0;
+  list-style: none;
+}
+.destinations__place--city {
+  .destinations__name {
+    font-size: 1.5625rem;
+    font-weight: 400;
+  }
+}
+.destinations__place--place {
+  .destinations__name {
+    font-size: 1.35rem;
+  }
+}
+.destinations__place-description {
+  display: flex;
+  border-bottom: 1px solid $inputBorderColor;
+  border-radius: 3px;
+  position: relative;
+}
+.destinations__place-title {
+  min-width: 120px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 15px 10px;
+  font-weight: 600;
+  font-size: 18px;
+  @media (max-width: $screenMobile) {
+    display: none;
+  }
+}
+.destinations__place-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  @media (max-width: $screenMobile) {
+    padding-right: 15px;
+  }
+}
+.destinations--hide {
+  display: none;
+}
+.destination__dropdown {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  min-width: 50px;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  transition: all .3s;
+  &:focus {
+      outline: none;
+  }
+  &.destination__dropdown--up {
+    transform: scale(-1);
+    @media (max-width: $screenMobileS) {
+      transform: scale(-0.75);
+    }
+  }
+  @media (max-width: $screenMobileS) {
+    width: 35px;
+    min-width: 35px;
+    transform: scale(0.75);
+  }
+}
+.destinations--hidden {
+  max-height: 0;
+  overflow: hidden;
+}

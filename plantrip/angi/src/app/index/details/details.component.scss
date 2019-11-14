@@ -1,0 +1,8 @@
+app-details-main.isFriend {
+    pointer-events: none;
+}
+:host {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}

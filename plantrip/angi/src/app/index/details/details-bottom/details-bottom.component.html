@@ -1,0 +1,3 @@
+<app-details-search *ngIf="!isNotEditable" [list]=props.places (searchEmitter)=updatePlaceHandler($event)></app-details-search>
+<h2>{{detailsBottomTitle}}</h2>
+<app-details-list [isNotEditable]="isNotEditable" *ngIf="props.places" [list]=props.places (deleteEmitter)=updatePlaceHandler($event)></app-details-list>

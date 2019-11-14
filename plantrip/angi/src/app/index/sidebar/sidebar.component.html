@@ -1,0 +1,15 @@
+<div class="sidebar__inner">
+  <div class="sidebar__top">
+    <app-back-arrow (buttonClickEvent)="closeCreateNewMenu()" [props]="backArrowProps" [ngClass]="{'isHidden': isNewHidden}"></app-back-arrow>
+    <button type="button" class="sidebar__close-btn" (click)="closeSidebar()">
+      <svg-icon [src]="closeButtonImg" [svgStyle]="{ 'width.%': 100, 'height.%': 100 }"></svg-icon>
+    </button>
+  </div>
+  <div class="profile sidebar__profile">
+    <img [src]="userAvatar" alt="Аватар" class="sidebar__profile-image">
+    <p class="profile__text">{{ userName }}</p>
+  </div>
+  <app-sidebar-navigation [ngClass]="{'isHidden': isNavHidden}" (openCreateNewMenu)="openCreateNewMenu()"></app-sidebar-navigation>
+  <app-sidebar-new [ngClass]="{'isHidden': isNewHidden}"></app-sidebar-new>
+  <app-sidebar-bottom></app-sidebar-bottom>
+</div>

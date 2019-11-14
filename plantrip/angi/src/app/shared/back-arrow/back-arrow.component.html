@@ -1,0 +1,6 @@
+<a *ngIf="!props.isButton" [className]="getClass()" [routerLink]="props.link">
+    <svg-icon [src]="image" [svgStyle]="{ 'width.px': 25, 'height.px': 25, 'fill': iconColor }"></svg-icon>
+</a>
+<button *ngIf="props.isButton" (click)="buttonClickHandler()" [className]="getClass()">
+    <svg-icon [src]="image" [svgStyle]="{ 'width.px': 25, 'height.px': 25, 'fill': iconColor }"></svg-icon>
+</button>

@@ -1,0 +1,23 @@
+@import "variables.scss";
+
+.auth__title {
+  margin-top: 0;
+  margin-bottom: 55px;
+  font-size: 1.875rem;
+  line-height: 1.3;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+}
+
+.auth__title--smaller {
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+@media (max-width: $screenMobile) {
+  .auth__title--smaller {
+    margin-bottom: 40px;
+  }
+}

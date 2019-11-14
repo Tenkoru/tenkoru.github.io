@@ -1,0 +1,48 @@
+@import "variables.scss";
+
+.back-arrow {
+  position: relative;
+  text-decoration: none;
+  transition: all 0.3s;
+  fill: $backArrowColor;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+.back-arrow:hover {
+  transform: translateX(-5px);
+}
+
+.auth__back-arrow {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  z-index: 1;
+  cursor: pointer;
+}
+@media (max-width: $screenTabletBig) {
+  .auth__back-arrow {
+    right: 100%;
+  }
+}
+@media (max-width: $screenMobile) {
+  .auth__back-arrow {
+    height: 30px;
+    transform: translateY(-15%);
+  }
+}
+@media (max-width: $screenMobileXS) {
+  .auth__back-arrow {
+    right: auto;
+    top: 0;
+    left: 0;
+  }
+}
+.headerArrow {
+  margin-right: 15px;
+}

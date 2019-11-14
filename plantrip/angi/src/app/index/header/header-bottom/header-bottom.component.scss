@@ -1,0 +1,18 @@
+@import "variables.scss";
+
+:host {
+  display: flex;
+  align-items: center;
+  margin-top: 45px;
+  @media (max-width: $screenMobile) {
+    margin-top: 10px;
+  }
+}
+.page-title {
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  font-weight: 400;
+  @media (max-width: $screenMobile) {
+    font-size: 2rem;
+  }
+}
