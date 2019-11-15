@@ -87,6 +87,9 @@ a:hover {
 	opacity: 0.8;
 	transform: scale(1.1);
 }
+.works__photo.works__photo--contain img {
+	object-fit: contain;
+}
 .works__pages {
 	text-align: left;
 }
