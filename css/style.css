@@ -81,7 +81,7 @@ a:hover {
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
-	object-fit: fill;
+	object-fit: cover;
 }
 .works__photo img:hover {
 	opacity: 0.8;
